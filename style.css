@@ -1,0 +1,161 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery {
+    position: relative;
+    flex-basis: 47%;
+    background: rgb(24, 12, 1);
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+}
+.gallery img {
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+
+}
+.details {
+    flex-basis: 53%;
+    background: white;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+.details h1 {
+    color: #333;
+    font-size: 35px;
+}
+.details h2 {
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.details h3 {
+    color: #00d874;
+    margin: 5px auto ;
+}
+.details form {
+    font-size: 15px;
+    font-weight: 500;
+}
+.size__select {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.size__select p {
+    width: 70px;
+}
+.size__select input:checked + span {
+    color: blue;
+    font-weight: 600;
+}
+.size__select input{
+    display: none;
+}
+.size__select span {
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color__select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color__select p {
+    width: 75px;
+}
+.color__select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color__1 {
+    background: red;
+}
+.color__2 {
+    background: green;
+}
+.color__3 {
+    background: blue;
+}
+.color__4 {
+    background: pink;
+}
+.color__select input {
+    display: none;
+}
+.color__select input:checked + span {
+    transform: scale(.7);
+    box-shadow: 0 0 0 4px white, 0 0 0 6px black;
+}
+.quantity__select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity__select p {
+    width: 75px;
+}
+.quantity__select input {
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button {
+    background: blue;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 90px;
+    box-shadow: -5px 2px 5px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    margin: 10px;
+    cursor: pointer;
+}
+.btn.active {
+    background: blue;
+}
